@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bird Animation</title>
+<style>
+  .bird {
+    width: 100px;
+    height: 100px;
+    background-image: url('bird.png'); /* Replace 'bird.png' with your bird image */
+    background-size: cover;
+    position: relative;
+    animation: fly 4s infinite linear; /* Adjust duration and timing function as needed */
+  }
+
+  @keyframes fly {
+    0% { transform: translateY(0) rotate(-10deg); }
+    50% { transform: translateY(-100px) rotate(10deg); }
+    100% { transform: translateY(0) rotate(-10deg); }
+  }
+</style>
+</head>
+<body>
+  <div class="bird"></div>
+</body>
+</html>
